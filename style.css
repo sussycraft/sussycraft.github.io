@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    background-color: #202020;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --video-blur-radius: 1vh;
+}
+
+#back_video {
+    position: absolute;
+    filter: blur(var(--video-blur-radius));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#container {
+    --side-margin: 15vw;
+    --inside-padding: 20px;
+
+    position: absolute;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: white;
+    
+    border-radius: 10px;
+    backdrop-filter: blur(2vh);
+
+    margin: 50px calc(var(--side-margin) - var(--inside-padding));
+    width: calc(100vw - 2 * var(--side-margin));
+    width: auto;
+    padding: var(--inside-padding);
+    
+    /* center everything */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container p {
+    margin: 5px;
+}
+
+#logo {
+    width: 25%;
+    border-radius: 25%;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 5px;
+    text-shadow: 0 0 10px #80c0ff;
+}
+
+
+
+#badges_div {
+    margin: 0 10%;
+
+    display: grid;
+}
+
+/* on mobile */
+@media (min-width: 600px) {
+    #badges_div {
+        grid-template-columns: auto auto;
+    }
+}
+
+#google_play_badge {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+
+#itchio_badge_link {
+    padding: 6.6%;
+}
+
+#itchio_badge {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+footer {
+    --footer-height: 50px;
+
+    color: rgb(180,180,180);
+    font-size: 0.8em;
+    
+    margin: 0;
+    margin-bottom: calc(var(--video-blur-radius) * -1);
+
+    position: absolute;
+    bottom: calc(0px - var(--footer-height));
+    height: var(--footer-height);
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    /* change value after "100vw / " after adding or removing elements from footer */
+    width: calc(100vw / 2);
+}
