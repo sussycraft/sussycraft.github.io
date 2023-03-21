@@ -114,7 +114,9 @@ h1 {
     /* rotate text */
     transform: rotate(13deg);
 
-    text-shadow: 0 0 15px #000
+    text-shadow: 0 0 15px #000;
+
+    font-size: 400%;
 }
 
 
