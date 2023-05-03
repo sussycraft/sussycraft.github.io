@@ -89,36 +89,6 @@ h1 {
     margin-bottom: -4px;
 }
 
-#rotated_text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    /* bold font*/
-    font-weight: bold;
-
-    /* center text vertically */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #ffec9e;
-
-}
-
-#rotated_text p {
-    margin: 0;
-
-    /* rotate text */
-    transform: rotate(13deg);
-
-    text-shadow: 0 0 15px #000;
-
-    font-size: 400%;
-}
-
 
 footer {
     --footer-height: 50px;
